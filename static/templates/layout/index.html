@@ -1,0 +1,30 @@
+<posts posts="vm.posts" ng-show="vm.posts && vm.posts.length"></posts>
+
+<a class="btn btn-primary btn-fab btn-raised mdi-content-add btn-add-new-post"
+   href="javascript:void(0)"
+   ng-show="vm.isAuthenticated"
+   ng-dialog="/static/templates/posts/new-post.html"
+   ng-dialog-controller="NewPostController as vm"></a>
+
+<!-- Auction Items
+================================================== -->
+<!-- <div class="container items" ng-controller=homeCtrl> -->
+<div class="container items">
+    <div class="row">
+        <div class="col-lg-4" ng-repeat="item in vm.items">
+            <div class="thumbnail">
+                <img src="/static/images/kittens.jpg" alt="300x200">
+                <div class="caption">
+                    <h3>{{ item.name }}</h3>
+                    <p>{{ item.description }}</p>
+                    <p><a href="/auction/room/{{item.id}}"> <span class="badge pull-right">{{ item.bidder_num }}</span>进入拍卖房间</a></p>
+                </div>
+            </div><!-- /.thumbnail -->
+        </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+    <p>
+    <a href="/add-item">Add a Item</a>
+    </p>
+
+</div><!-- /.container items -->

@@ -1,0 +1,24 @@
+{
+  "name": "thinkster_django_angular_boilerplate",
+  "version": "0.0.0",
+  "homepage": "https://github.com/brwr/thinkster-django-angular-boilerplate",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.5.9",
+    "angular-route": "~1.5.9",
+    "angular-cookies": "~1.5.9",
+    "bootstrap": "~3.3.7",
+    "bootstrap-material-design": "~0.5.10",
+    "jquery": "~2.2.4",
+    "ngDialog": "~0.6.2",
+    "underscore": "~1.8.3",
+    "jquery.countdown": "^2.1.0"
+  }
+}

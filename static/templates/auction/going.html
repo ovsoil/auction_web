@@ -1,0 +1,25 @@
+<div class="col-md-6 column">
+  <p>{{vm.item.name}}</p>
+  <blockquote>
+    <p>正在拍卖</p>
+    <small>
+      <div id="getting-started"></div>
+      <script type="text/javascript">
+      $('#getting-started').countdown('2017/01/01', function(event) {
+      $(this).html(event.strftime('距离结束: %w weeks %d days %H:%M:%S'));
+      });
+      </script>
+      <p>
+      {{vm.item.bidder_num}} 人出价
+      </p>
+    </small>
+  </blockquote>
+  <p>
+  当前价格:{{}}
+  </p>
+  <div class="row clearfix">
+    <div class="col-md-6 column">
+      <button type="button" class="btn btn-default">出价</button>
+    </div>
+  </div>
+</div>

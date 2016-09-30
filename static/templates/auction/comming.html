@@ -1,0 +1,17 @@
+<div class="col-md-6 column">
+  <p>{{vm.item.name}}</p>
+  <blockquote>
+    <p>即将开拍</p>
+    <small>
+      <div id="getting-started"></div>
+      <script type="text/javascript">
+      $('#getting-started').countdown('2017/01/01', function(event) {
+      $(this).html(event.strftime('距离开拍: %w weeks %d days %H:%M:%S'));
+      });
+      </script>
+      <p>
+      N 人出价
+      </p>
+    </small>
+  </blockquote>
+</div>
